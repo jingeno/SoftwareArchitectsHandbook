@@ -1,0 +1,5 @@
+d:\Users\Joe\Documents\Visual Studio 2017\Projects\SoftwareArchitectsHandbook\SoftwareArchitectsHandbook\obj\Debug\SoftwareArchitectsHandbook.csproj.CoreCompileInputs.cache
+d:\Users\Joe\Documents\Visual Studio 2017\Projects\SoftwareArchitectsHandbook\SoftwareArchitectsHandbook\bin\Debug\SoftwareArchitectsHandbook.pdb
+d:\Users\Joe\Documents\Visual Studio 2017\Projects\SoftwareArchitectsHandbook\SoftwareArchitectsHandbook\obj\Debug\SoftwareArchitectsHandbook.pdb
+d:\Users\Joe\Documents\Visual Studio 2017\Projects\SoftwareArchitectsHandbook\SoftwareArchitectsHandbook\bin\Debug\SoftwareArchitectsHandbook.dll
+d:\Users\Joe\Documents\Visual Studio 2017\Projects\SoftwareArchitectsHandbook\SoftwareArchitectsHandbook\obj\Debug\SoftwareArchitectsHandbook.dll

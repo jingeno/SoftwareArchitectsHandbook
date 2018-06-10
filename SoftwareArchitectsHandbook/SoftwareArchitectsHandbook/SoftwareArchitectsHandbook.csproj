@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6337B30-7B0E-4DAE-B2F2-C0A5AF1E9EDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SoftwareArchitectsHandbook</RootNamespace>
+    <AssemblyName>SoftwareArchitectsHandbook</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chapter06\DependencyInjection\Employee.cs" />
+    <Compile Include="Chapter06\DependencyInjection\IOrgService.cs" />
+    <Compile Include="Chapter06\DependencyInjection\OrgService.cs" />
+    <Compile Include="Chapter06\DependencyInjection\PersonMethodInjection.cs" />
+    <Compile Include="Chapter06\DependencyInjection\PersonPropertyInjection.cs" />
+    <Compile Include="Chapter06\DependencyInjection\Person.cs" />
+    <Compile Include="Chapter09\AccountService.cs" />
+    <Compile Include="Chapter09\AccountServiceDecorator.cs" />
+    <Compile Include="Chapter09\CachingAccountService.cs" />
+    <Compile Include="Chapter09\IAccount.cs" />
+    <Compile Include="Chapter09\IAccountService.cs" />
+    <Compile Include="Chapter09\LoggingAccountService.cs" />
+    <Compile Include="Common\ICache.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\BookRefactored.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\Book.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\IBook.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\IMovie.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\IProductRefactored.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\IProduct.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\MovieRefactored.cs" />
+    <Compile Include="Chapter06\InterfaceSegregationPrinciple\Movie.cs" />
+    <Compile Include="Chapter06\LiskovSubstitutionPrinciple\Rectangle.cs" />
+    <Compile Include="Chapter06\LiskovSubstitutionPrinciple\Square.cs" />
+    <Compile Include="Chapter06\MagicStrings\MagicStringRefactored.cs" />
+    <Compile Include="Chapter06\MagicStrings\MagicString.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\Canvas.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\CircleRefactored.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\Circle.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\IShape.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\Rectangle.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\CanvasRefactored.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\RectangleRefactored.cs" />
+    <Compile Include="Chapter06\OpenClosedPrinciple\Shape.cs" />
+    <Compile Include="Chapter06\SingleResponsibilityPrinciple\EmailService.cs" />
+    <Compile Include="Chapter06\SingleResponsibilityPrinciple\IEmailService.cs" />
+    <Compile Include="Common\ILogger.cs" />
+    <Compile Include="Chapter06\SingleResponsibilityPrinciple\RefactoredEmailService.cs" />
+    <Compile Include="Chapter06\SingleResponsibilityPrinciple\SendEmailRequest.cs" />
+    <Compile Include="Chapter06\SingleResponsibilityPrinciple\SendEmailResponse.cs" />
+    <Compile Include="Chapter09\Order.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chapter10\rectangle.js" />
+    <Content Include="Chapter10\rectangle.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
